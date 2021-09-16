@@ -20,21 +20,53 @@ body .home .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: lightcyan;
 }
 
 body .home .navbar .navbar-brand {
+  color: #242f51;
+  margin-left: 4rem;
   font-size: 30px;
   font-weight: bold;
 }
 
 body .home .navbar .navbar-brand span {
-  color: #00c3ff;
+  color: #2563ff;
 }
 
-body .home .navbar .btn {
-  padding: 5px 15px;
-  background-color: #00c3ff;
+body .home .navbar .collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .home .navbar .collapse .nav-link {
+  color: #242f51;
+  font-weight: 500;
+  margin: 0 1rem;
+}
+
+body .home .navbar .collapse .btn {
+  padding: 10px 15px;
+  background-color: #2563ff;
   border-radius: 50px;
+  border: 3px solid #2563ff;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0.3rem 1rem;
+  color: white;
+  margin-right: 4rem;
+}
+
+body .home .navbar .collapse .btn:hover {
+  background-color: transparent;
+  border: 3px solid #2563ff;
+  color: #2563ff;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 body .home .row {
@@ -277,5 +309,27 @@ body .app .container .row .col-md-4 .rasm {
   padding: 1rem;
   border-radius: 50%;
   width: 100px;
+}
+
+body .built .row .col-md-6 .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .built .row .col-md-6 .boxes .box h4 {
+  font-family: sans-serif;
+  color: #242f51;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body .built .row .col-md-6 .boxes .box p {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 200;
 }
 /*# sourceMappingURL=style.css.map */

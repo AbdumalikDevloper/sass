@@ -11,17 +11,41 @@ body{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: lightcyan;
             .navbar-brand{
+                color: #242f51;
+                margin-left: 4rem;
                 font-size: 30px;
                 font-weight: bold;
                 span{
-                    color: rgb(0, 195, 255);
+                    color: #2563ff;
                 }
             }
-            .btn{
-                padding: 5px 15px;
-                background-color: rgb(0, 195, 255);
-                border-radius: 50px;
+            .collapse{
+                justify-content: flex-end;
+                align-items:center;
+                .nav-link{
+                    color: #242f51;
+                    font-weight: 500;
+                    margin: 0 1rem;
+                }
+                .btn{
+                    padding: 10px 15px;
+                    background-color: #2563ff;
+                    border-radius: 50px;
+                    border: 3px solid #2563ff;
+                    font-weight: bold;
+                    font-size: 17px;
+                    padding: 0.3rem 1rem;
+                    color: white;
+                    margin-right: 4rem;
+                }
+                .btn:hover{
+                    background-color: transparent;
+                    border: 3px solid #2563ff;
+                    color: #2563ff;
+                    transition: 0.3s linear;
+                }
             }
         }
         .row{
@@ -205,6 +229,29 @@ body{
                         padding:1rem;
                         border-radius: 50%;
                         width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .built{
+        .row{
+            .col-md-6{
+                .boxes{
+                    display: flex;
+                    align-items: center;
+                    .box{
+                        h4{
+                            font-family: sans-serif;
+                            color: #242f51;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                        p{
+                            font-family: sans-serif;
+                            font-size: 15px;
+                            font-weight: 200;
+                        }
                     }
                 }
             }
