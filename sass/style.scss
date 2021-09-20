@@ -1,6 +1,15 @@
 *{
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6{
+    color: #242f51;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #7a7a7a;
+}
 body{
     .home{
         background-image: url('../img/Home_bg.png');
@@ -77,6 +86,7 @@ body{
                         }
                         h4{
                             font-family: sans-serif;
+                            margin: 0;
 
                         }
                     }
@@ -84,21 +94,26 @@ body{
                         h1{
                             font-size: 4rem;
                         }
-                        p{
-                            font-family: sans-serif;
-                        }
                     }
                     .box3{
                         .btn{
                             padding: 10px 20px;
                             background-color: rgb(0, 89, 255);
                             font-size: 20px;
+                            border: 3px solid #2563ff;
                             color: white;
                             border-radius: 30px;
                         }
                         .btn1{
                             background-color: transparent;
                             color: rgb(0, 89, 255);
+                            border: 0;
+                        }
+                        .btn2:hover{
+                            background-color: transparent;
+                            border: 3px solid #2563ff;
+                            color: #2563ff;
+                            transition: 0.3s linear;
                         }
                     }
                 }
@@ -236,6 +251,14 @@ body{
     }
     .built{
         .row{
+            .col-md-4{
+                h2{
+                    font-size: 2.2rem;
+                    margin: 0;
+                    padding: 0!important;
+                    padding-bottom: 2rem!important;
+                }
+            }
             .col-md-6{
                 .boxes{
                     display: flex;
@@ -255,6 +278,198 @@ body{
                     }
                 }
             }
+            .btn{
+                padding: 10px 50px;
+                background-color: rgb(0, 89, 255);
+                font-size: 18px;
+                border: 3px solid #2563ff;
+                color: white;
+                border-radius: 30px;
+                font-weight: bold;
+            }
+            .btn2:hover{
+                background-color: transparent;
+                border: 3px solid #2563ff;
+                color: #2563ff;
+                transition: 0.3s linear;
+            }
+        }
+    }
+    .pricing{
+        // height: 100vh;
+        .container{
+            .top{
+                margin: 0 15rem;
+                h2{
+                    font-size: 2.5rem;
+                    padding: 2rem 0rem;
+                }
+                p{
+                    padding: 1rem 0;
+                }
+                .btn{
+                    padding: 10px 20px;
+                    background-color: rgb(0, 89, 255);
+                    font-size: 20px;
+                    border: 3px solid #2563ff;
+                    color: white;
+                    border-radius: 30px;
+                }
+                .btn1{
+                    background-color: transparent;
+                    color: rgb(0, 89, 255);
+                    border: 0;
+                }
+                .btn2:hover{
+                    background-color: transparent;
+                    border: 3px solid #2563ff;
+                    color: #2563ff;
+                    transition: 0.3s linear;
+                }
+                
+            }
+            .collapse{
+                .row{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .col-md-4{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 2rem;
+                        h2{
+                            font-size: 1.8em;
+                            font-weight: 400;
+                            color: #7a7a7a;
+                            span{
+                                font-size: 3.5rem;
+                                font-weight: bold;
+                                color: #242f51;
+                            }
+                        }
+                        h4{
+                            color: #242f51;
+                            padding: 1rem;
+                        }
+                        h5{
+                            color: #7a7a7a;
+                            padding: 1rem;
+                        }
+                        p{
+                            color: #7a7a7a;
+                            padding: 0.7rem;
+                        }
+                        h6{
+                            color: #2563ff;
+                        }
+                        .btn{
+                            padding: 10px 30px;
+                            background-color: rgb(0, 89, 255);
+                            font-size: 20px;
+                            border: 3px solid #2563ff;
+                            color: white;
+                            border-radius: 30px;
+                        }
+                        .btn1{
+                            background-color: transparent;
+                            color: rgb(0, 89, 255);
+                            border: 0;
+                        }
+                        .btn2:hover{
+                            background-color: transparent;
+                            border: 3px solid #2563ff;
+                            color: #2563ff;
+                            transition: 0.3s linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .client{
+        padding-top: 5rem;
+        height: 100vh;
+        .container{
+            .row{
+                .first{
+                    background-image: url('../img/meet_client.png');
+                    height: 400px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding-right: 5rem!important;
+                }
+                .col-md-6{
+                    h2{
+                        font-size: 2.7rem;
+                    }
+                    .boxes{
+                        h4{
+                            font-weight: bold;
+                            padding-top: 2rem;
+                            color: #242f51;
+                        }
+                        p{
+                            color: #7a7a7a;
+                            font-family: sans-serif;
+                            font-size: 18px;
+                        }
+                        .quti{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                            .quticha{
+                                padding-left: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faq{
+        .container{
+            margin: 5rem 5rem;
+            .text-center{
+                padding: 0 11rem;
+            }
+            .accordion-item{
+                margin-top: 1rem;
+            }
+        }
+    }
+    .footer{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #09142e;
+        h3{
+            font-weight: bold;
+            font-size: 35px;
+            span{
+                color: #2563ff;
+            }
+        }
+        .link{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            a{
+                color: white;
+            }
+        }
+        .icon{
+            color
         }
     }
 }
