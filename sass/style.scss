@@ -434,7 +434,6 @@ body{
 
     .faq{
         .container{
-            margin: 5rem 5rem;
             .text-center{
                 padding: 0 11rem;
             }
@@ -466,10 +465,18 @@ body{
             flex-wrap: wrap;
             a{
                 color: white;
+                margin-top: 2rem;
             }
         }
         .icon{
-            color
+            margin-top: 2rem;
+            color: rgba(97, 97, 97, 0.5);
+            i{
+                padding: 10px;
+            }
+        }
+        p{
+            margin-top: 4rem;
         }
     }
 }

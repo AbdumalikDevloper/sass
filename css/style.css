@@ -544,10 +544,6 @@ body .client .container .row .col-md-6 .boxes .quti .quticha {
   padding-left: 2rem;
 }
 
-body .faq .container {
-  margin: 5rem 5rem;
-}
-
 body .faq .container .text-center {
   padding: 0 11rem;
 }
@@ -602,5 +598,19 @@ body .footer .link {
 
 body .footer .link a {
   color: white;
+  margin-top: 2rem;
+}
+
+body .footer .icon {
+  margin-top: 2rem;
+  color: rgba(97, 97, 97, 0.5);
+}
+
+body .footer .icon i {
+  padding: 10px;
+}
+
+body .footer p {
+  margin-top: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
